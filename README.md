@@ -27,13 +27,14 @@ There are 3 open source models used in the app: [stable-diffusion by stabilityai
 TTS can be installed only using python versions >= 3.9 and Wav2Lip works with python 3.6: the packages are completely incompatible. This forced me to download the models from their repositories and save them as a local package. Moreover I downloaded the pretrained weights and saved them too in order to avoid downloading them everytime the app starts: this is crucial especially for deployment as for local use the weights are saved automatically in case of TTS and diffusion model. Below I will show how to save the weights for each model.
 <br>
 For TTS use the following
-```
+```python:
 import torch
 from TTS.api import TTS
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
-tts = TTS(model_name="tts_models/multilingual/multi-dataset/your_tts", progress_bar=False).to(device)```
+tts = TTS(model_name="tts_models/multilingual/multi-dataset/your_tts", progress_bar=False).to(device)
+```
 
 Then go to the directory where "tts_models--multilingual--multi-dataset--your_tts" folder has been saved: it contains the all necessary files. Copy the files to the folder called tts_model.
 
@@ -42,14 +43,15 @@ For Wav2Lip visit the its [git repository](https://github.com/Rudrabha/Wav2Lip) 
 
 <br>
 For diffusion model use the following.
-```
+```python:
 import torch
 from diffusers import StableDiffusionPipeline
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 model_id = "stabilityai/stable-diffusion-2-1-base"
-pipe = StableDiffusionPipeline.from_pretrained(model_id).to(device)```
+pipe = StableDiffusionPipeline.from_pretrained(model_id).to(device)
+```
 
 In my case it created "C:\Users\vchar\.cache\huggingface\hub" inside which there is another folder containing all the files related to the model. Copy all the files from that folder and paste inside the diffusion_model folder.
 
