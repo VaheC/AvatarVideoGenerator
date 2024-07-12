@@ -57,3 +57,19 @@ pipe = StableDiffusionPipeline.from_pretrained(model_id).to(device)
 ```
 In my case it created "C:\Users\vchar\.cache\huggingface\hub" inside which there is another folder containing all the files related to the model. Copy all the files from that folder and paste inside the diffusion_model folder.
 
+## About the app
+
+### Pros
+* Allows to create a video of any size
+* Allows to create a audio file of any length to reproduce in the video
+* It is free
+* Allows to generate avatars
+### Cons
+* The quality is not excellent due to using open source models
+* Time to generate videos increases with the size of video
+* Time to generate audios increases with the length of audio
+* Doesn't use gpu to accelerate the calculations
+
+## Possible modifications
+* Trainig custom models for audio, video, and avatar generation
+* Reducing calculation time using quantization or gpu
