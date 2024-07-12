@@ -40,6 +40,7 @@ tts = TTS(model_name="tts_models/multilingual/multi-dataset/your_tts", progress_
 Then go to the directory where "tts_models--multilingual--multi-dataset--your_tts" folder has been saved: it contains the all necessary files. Copy the files to the folder called tts_model.
 
 <br>
+
 For Wav2Lip visit the its [git repository](https://github.com/Rudrabha/Wav2Lip) and follow the instructions on how to download the pretrained weigths for face detection. Then rename the file to s3fd.pth and save it inside "Wav2Lip\face_detection\detection\sfd" folder. In the repository the link to the Wav2Lip pretrained model's weights is given too. So download it and paste inside wav2lip_model folder.
 
 <br>
