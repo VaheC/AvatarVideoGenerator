@@ -74,3 +74,5 @@ In my case it created "C:\Users\vchar\.cache\huggingface\hub" inside which there
 ## Possible modifications
 * Training custom models for audio, video, and avatar generation
 * Reducing calculation time using quantization or gpu
+
+The deployed version can be found [here](https://huggingface.co/spaces/Vahe/AvatarVideoGenerator).
