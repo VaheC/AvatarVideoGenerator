@@ -19,7 +19,7 @@ In the second step the user should create an audio file that will be reproduced 
 <br>
 The third step is to generate the video using "Generate video" button ([Wav2Lip](https://github.com/Rudrabha/Wav2Lip) model is used). Depending on the length of the audio to reproduce the video generation time varies: it takes around 4 seconds to generate 1 second of video.
 
-The all steps above are shown the following [video](https://youtu.be/AqGZJb5qu5A).
+The all steps above are shown in the following [video](https://youtu.be/AqGZJb5qu5A).
 
 ## Models used 
 
