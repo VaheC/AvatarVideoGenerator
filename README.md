@@ -40,5 +40,16 @@ Then go to the directory where "tts_models--multilingual--multi-dataset--your_tt
 <br>
 For Wav2Lip visit the its [git repository](https://github.com/Rudrabha/Wav2Lip) and follow the instructions on how to download the pretrained weigths for face detection. Then rename the file to s3fd.pth and save it inside "Wav2Lip\face_detection\detection\sfd" folder. In the repository the link to the Wav2Lip pretrained model's weights is given too. So download it and paste inside wav2lip_model folder.
 
+<br>
+For diffusion model use the following.
+```
+import torch
+from diffusers import StableDiffusionPipeline
 
+device = "cuda" if torch.cuda.is_available() else "cpu"
+
+model_id = "stabilityai/stable-diffusion-2-1-base"
+pipe = StableDiffusionPipeline.from_pretrained(model_id).to(device)
+```
+In my case it created "C:\Users\vchar\.cache\huggingface\hub" inside which there is another folder containing all the files related to the model. Copy all the files from that folder and paste inside the diffusion_model folder.
 
