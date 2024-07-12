@@ -71,5 +71,5 @@ In my case it created "C:\Users\vchar\.cache\huggingface\hub" inside which there
 * Doesn't use gpu to accelerate the calculations
 
 ## Possible modifications
-* Trainig custom models for audio, video, and avatar generation
+* Training custom models for audio, video, and avatar generation
 * Reducing calculation time using quantization or gpu
