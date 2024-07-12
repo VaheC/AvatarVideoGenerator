@@ -18,7 +18,8 @@ At first, when a user visits the app, she/he needs to provide an image of an ava
 In the second step the user should create an audio file that will be reproduced in the video. There are 2 ways to do this. The first one is to select a voice audio and to provide text, then to generate the audio using "Generate audio from the text" button ([coqui TTS](https://github.com/coqui-ai/TTS) model is used). There are 2 options to provide the voice audio: the user can either select it from the default available voices by expanding "Available voice audio" and selecting one from "Please select a voice to clone" dropdown list or upload an audio that contains the desired voice (PLEASE REMEMBER TO REMOVE THE UPLOADED AUDIO IF YOU ARE GOING TO USE THE OTHER OPTION AFTER TRYING THIS ONE: there will be "cross" sign available next to the uploaded audio in the app, you can use it to remove the audio). The time of audio generation depends on the length of the text provided: approximately it takes 0.7 seconds to generate 1 second of audio. The second option is to upload the audio, that will be reproduced in the video, using "Please, upload an audio" upload button. PLEASE REMEMBER TO REMOVE THE UPLOADED AUDIO IF YOU ARE GOING TO USE THE OTHER OPTION AFTER TRYING THIS ONE (there will be "cross" sign available next to the uploaded audio in the app, you can use it to remove the audio).
 <br>
 The third step is to generate the video using "Generate video" button ([Wav2Lip](https://github.com/Rudrabha/Wav2Lip) model is used). Depending on the length of the audio to reproduce the video generation time varies: it takes around 4 seconds to generate 1 second of video.
-The all steps above are shown the following [video]().
+
+The all steps above are shown the following [video](https://youtu.be/AqGZJb5qu5A).
 
 ## Models used 
 
