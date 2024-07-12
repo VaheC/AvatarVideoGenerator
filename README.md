@@ -19,3 +19,21 @@ In the second step the user should create an audio file that will be reproduced 
 <br>
 The third step is to generate the video using "Generate video" button ([Wav2Lip](https://github.com/Rudrabha/Wav2Lip) model is used). Depending on the length of the audio to reproduce the video generation time varies: it takes around 4 seconds to generate 1 second of video.
 The all steps above are shown the following [video]().
+
+## Models used 
+
+There are 3 open source models used in the app: [stable-diffusion by stabilityai](https://huggingface.co/stabilityai/stable-diffusion-2-1-base), [coqui TTS](https://github.com/coqui-ai/TTS), and [Wav2Lip](https://github.com/Rudrabha/Wav2Lip). 
+<br>
+TTS can be installed only using python versions >= 3.9 and Wav2Lip works with python 3.6: the packages are completely incompatible. This forced me to download the models from their repositories and save them as a local package. Moreover I downloaded the pretrained weights and saved them too in order to avoid downloading them everytime the app starts: this is crucial especially for deployment as for local use the weights are saved automatically in case of TTS and diffusion model. Below I will show how to save the weights for each model.
+<br>
+For TTS use the following
+``` 
+import torch
+from TTS.api import TTS
+
+device = "cuda" if torch.cuda.is_available() else "cpu"
+
+tts = TTS(model_name="tts_models/multilingual/multi-dataset/your_tts", progress_bar=False).to(device)
+```
+Then go to the directory where "tts_models--multilingual--multi-dataset--your_tts" folder has been saved: it contains the all necessary files.
+
