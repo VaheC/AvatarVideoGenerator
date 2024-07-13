@@ -25,7 +25,7 @@ The all steps above are shown in the following [video](https://youtu.be/AqGZJb5q
 
 There are 3 open source models used in the app: [stable-diffusion by stabilityai](https://huggingface.co/stabilityai/stable-diffusion-2-1-base), [coqui TTS](https://github.com/coqui-ai/TTS), and [Wav2Lip](https://github.com/Rudrabha/Wav2Lip). 
 <br>
-TTS can be installed only using python versions >= 3.9 and Wav2Lip works with python 3.6: the packages are completely incompatible. This forced me to download the models from their repositories and save them as a local package. Moreover I downloaded the pretrained weights and saved them too in order to avoid downloading them everytime the app starts: this is crucial especially for deployment as for local use the weights are saved automatically in case of TTS and diffusion model. Below I will show how to save the weights for each model.
+TTS can be installed only using python versions >= 3.9 and Wav2Lip works with python 3.6: the packages are completely incompatible. This forced me to download the models from their repositories and save them as a local package. Moreover I downloaded the pretrained weights and saved them too in order to avoid downloading them everytime the app starts: this is crucial especially for deployment as for local use the weights are saved automatically in case of TTS and diffusion model. Below I will show how to save the weights for each model. Besides I have made some changes in TTS and Wav2Lip files to make it work.
 <br>
 For TTS use the following
 
