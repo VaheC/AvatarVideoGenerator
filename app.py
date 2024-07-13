@@ -8,8 +8,8 @@ from TTS.utils.synthesizer import Synthesizer
 from Wav2Lip.video_generator import create_video
 
 gpu = False
-model_path = Path(r"tss_model/model_file.pth")
-config_path = Path(r"tss_model/config.json")
+model_path = Path(r"tts_model/model_file.pth")
+config_path = Path(r"tts_model/config.json")
 vocoder_path = None
 vocoder_config_path = None
 model_dir = None
